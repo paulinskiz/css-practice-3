@@ -1,0 +1,369 @@
+/* Prijungta */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(red, green, blue, alpha);
+}
+
+.fixed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 5;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #ea1e63;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top, rgba(40, 163, 230, 0.5), rgba( 158, 210, 249, 0.5), rgba(155, 138, 242, 0.5));
+    /* background-image: url(../img/stars.jpg); */
+    position: relative;
+   
+}
+
+.header .background {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+}
+
+.header img {
+    width: 30px;
+    margin-top: 40px;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.header p {
+    padding: 0;
+    margin: 0;
+    color: grey;
+    font-size: 15px;
+}
+
+/* COUNTER */
+.header .counter {
+    display: flex;
+}
+
+.header .counter .time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    color: white;
+}
+
+.header .counter .time .number {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header .counter .time .underNumber {
+    font-size: 10px;
+}
+/* COUNTER END */
+
+.header form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header form .email {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid white;
+    height: 30px;
+    width: 300px;
+    margin: 30px;
+}
+
+.header form .email::placeholder {
+    color: white;
+}
+
+.header form .button {
+    outline: 0;
+    border: 0;
+    background-color: #ea1e63;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.underButton {
+    width: 25px;
+    height: 40px;
+    border: 3px solid white;
+    border-radius: 15px;
+    margin: 20px;
+    position: relative;
+}
+
+.underButton span {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    font-size: 30px;
+    color: white;
+}
+/* HEADER END */
+/* MAIN */
+
+.main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.left,
+.right {
+    width: 25%;
+    margin: 0 40px;
+}
+
+/* LEFT SIDE */
+
+.left h2 {
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.left p {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+ /* BLUE LINES */
+.firstLine,
+.secondLine,
+.thirdLine {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.firstLine .lineLeft {
+    width: 90%;
+    border-bottom: 3px solid #00a5f3;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.firstLine .lineRight {
+    width: 10%;
+    border-bottom: 3px solid #eeeeee;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.secondLine .lineLeft {
+    width: 86%;
+    border-bottom: 3px solid #00a5f3;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.secondLine .lineRight {
+    width: 14%;
+    border-bottom: 3px solid #eeeeee;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.thirdLine .lineLeft {
+    width: 86%;
+    border-bottom: 3px solid #00a5f3;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.thirdLine .lineRight {
+    width: 14%;
+    border-bottom: 3px solid #eeeeee;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* BLUE LINES END */
+
+/* LEFT SIDE END */
+
+/* RIGHT SIDE */
+.right h2 {
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.right p {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.right form {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.right form .name,
+.right form .email {
+    width: 45%;
+    /* height: 15px; */
+    margin-bottom: 40px;
+}
+
+.right form .message {
+    width: 100%;
+    height: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.right form .name,
+.right form .email,
+.right form .message {
+    border: 0;
+    outline: 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #d2d2d2;
+}
+
+::placeholder {
+    color: #ababab;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button {
+    margin-top: 50px;
+    outline: 0;
+    border: 0;
+    background-color: #ea1e63;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* RIGHT SIDE END */
+
+/* MAIN END */
+
+/* FOOTER */
+
+.footer {
+    width: 100vw;
+    background: linear-gradient(to top, rgba(40, 163, 230, 0.7), rgba(158, 210, 249, 0.7), rgba(155, 138, 242, 0.7));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .icons{
+    width: 80%;
+    border-bottom: 1px solid white;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .icons a {
+    color: white;
+    margin: 0 15px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.logo img {
+    width: 50px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.copy {
+    width: 40%;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 12px;
+}
+
+.copy .copyRight {
+    margin-bottom: 10px;
+}
+
+.copy .copyRight span:nth-child(2) {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.copy .copyRight span {
+    padding: 0 5px;
+}
+
+/* FOOTER END */
+
+@media only screen and (max-width: 500px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main .left, 
+    .main .right {
+        width: 80%;
+    }
+
+    .copy {
+        width: 80%;
+    }
+
+    .copy .copyRight {
+        margin-bottom: 10px;
+    }
+}
