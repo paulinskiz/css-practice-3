@@ -7,7 +7,7 @@
 body {
     padding: 0;
     margin: 0;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,6 +114,10 @@ table {
 .firstCol,
 .thirdCol {
     width: 30%;
+}
+
+.secondCol {
+    width: 40%;
 }
 /* TABLE LINES END */
 /* ICONS */
